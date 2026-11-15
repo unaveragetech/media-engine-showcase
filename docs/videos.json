@@ -1,6 +1,6 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 16:43",
+ "updated": "2026-11-15 16:44",
  "note": "Source code is private.",
  "videos": [
   {
@@ -14,7 +14,7 @@
    "file": "videos/nullpoint.mp4",
    "poster": "posters/nullpoint.jpg",
    "color": "#ffffff",
-   "description": "",
+   "description": "FICTION: an AI character performed by an AI-generated presenter. Nothing here is real. The silence is... informative.",
    "tags": [
     "AI",
     "SerialFiction",
@@ -51,7 +51,7 @@
    "file": "videos/deep-dive.mp4",
    "poster": "posters/deep-dive.jpg",
    "color": "#f0dc60",
-   "description": "",
+   "description": "When you build a studio entirely on your own hardware, the biggest threat isn't a crash\u2014it's drift. The subtle, unmonitored slide away from the truth.",
    "tags": [],
    "transcript": "Media Engine is a fully local video production framework that runs entirely on a single Windows PC, requiring no cloud AI services at runtime.\n\nA topic moves through a pipeline of discovery, scoring, a duplicate check, and research before anyone writes a script. A research claim only counts as verified when its supporting quote appears word for word in a stored source.\n\nSeven editorial workers write each script in turn, with every worker saving a new version instead of overwriting the last. Jobs are stored in a database with checkpoints, allowing an interrupted render to resume without repeating the narration. Emergency controls can pause publishing or stop every worker immediately.\n\nEvery channel gets one permanent virtual presenter with a locked face and a locked voice, so the host looks and sounds the same in every video.\n\nVideos are vertical, 1080 by 1920 pixels, assembled by FFmpeg with a presenter alternating with supporting graphics, plus captions and background music.\n\nAn independent quality stage must score each video at least 85 out of 100, and a hard failure such as an unsupported claim, a missing license or a missing AI disclosure blocks it regardless of score.\n\nAll language-model work goes through Ollama on the same computer, and the same graphics card also helps render the videos.",
    "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
