@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Media Engine Showcase</title>
+<meta name="description" content="Videos produced end to end by the Media Engine local video framework: AI presenters, designed voices, fact-checked scripts.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2300c8dc'/%3E%3Cpath d='M12 9l12 7-12 7z' fill='%23071626'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#f6f8fb;--panel:#fff;--line:#dde4ee;--tx:#14202e;--mu:#5d6f86;--ac:#0a8fb4;--sh:0 6px 22px rgba(10,30,60,.10)}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#0b1220;--panel:#121c30;--line:#22314d;--tx:#e8eef8;--mu:#8da2bf;--ac:#4cc9e8;--sh:0 6px 22px rgba(0,0,0,.45)}}
+:root[data-theme=dark]{--bg:#0b1220;--panel:#121c30;--line:#22314d;--tx:#e8eef8;--mu:#8da2bf;--ac:#4cc9e8;--sh:0 6px 22px rgba(0,0,0,.45)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--ac)}
+header{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{max-width:1240px;margin:0 auto;padding:12px 16px;display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+h1{font-size:19px;margin:0;display:flex;align-items:center;gap:10px}
+h1 i{width:26px;height:26px;border-radius:8px;background:var(--ac);display:inline-grid;place-items:center}
+h1 i::after{content:"";border-left:9px solid var(--bg);border-top:6px solid transparent;border-bottom:6px solid transparent;margin-left:3px}
+.sp{flex:1}
+input[type=search]{background:var(--panel);border:1px solid var(--line);color:var(--tx);border-radius:10px;padding:9px 12px;min-width:200px;font:inherit}
+button{font:inherit;background:var(--panel);color:var(--tx);border:1px solid var(--line);border-radius:10px;padding:8px 12px;cursor:pointer}
+button:hover,button:focus-visible{border-color:var(--ac);outline:none}
+main{max-width:1240px;margin:0 auto;padding:18px 16px 60px}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 18px}
+.chip{border-radius:999px;padding:6px 14px}
+.chip[aria-pressed=true]{background:var(--ac);color:#04202a;border-color:var(--ac);font-weight:600}
+h2{font-size:15px;color:var(--mu);text-transform:uppercase;letter-spacing:.08em;margin:26px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:16px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--sh);cursor:pointer;display:flex;flex-direction:column;text-align:left;padding:0;position:relative}
+.card .ph{aspect-ratio:9/16;background:#000 center/cover no-repeat;position:relative}
+.card .ph::after{content:"";position:absolute;inset:auto 0 0 0;height:50%;background:linear-gradient(transparent,rgba(0,0,0,.72))}
+.card .play{position:absolute;right:12px;top:12px;width:38px;height:38px;border-radius:50%;background:rgba(0,0,0,.55);display:grid;place-items:center;z-index:2}
+.card .play::after{content:"";border-left:12px solid #fff;border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:4px}
+.card .meta{padding:10px 12px 12px}
+.card b{display:block;font-size:15px;line-height:1.3}
+.card small{color:var(--mu)}
+.badge{position:absolute;left:10px;bottom:10px;z-index:2;color:#fff;font-size:12px;font-weight:600;padding:3px 9px;border-radius:999px;background:rgba(0,0,0,.6);border:1px solid var(--cc,#fff)}
+.bar2{position:absolute;left:0;bottom:0;height:4px;background:var(--cc,var(--ac));z-index:3}
+dialog{border:0;border-radius:18px;padding:0;background:var(--panel);color:var(--tx);width:min(980px,96vw);max-height:94vh;box-shadow:0 20px 80px rgba(0,0,0,.55)}
+dialog::backdrop{background:rgba(3,8,18,.78)}
+.dg{display:grid;grid-template-columns:minmax(240px,420px) 1fr;gap:20px;padding:18px;overflow:auto;max-height:94vh}
+@media(max-width:760px){.dg{grid-template-columns:1fr}}
+video{width:100%;max-height:78vh;border-radius:14px;background:#000;aspect-ratio:9/16}
+.info h3{margin:0 0 4px;font-size:20px}.info p{color:var(--mu);margin:6px 0}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin:10px 0}
+details{border:1px solid var(--line);border-radius:12px;padding:8px 12px;margin-top:12px}
+details summary{cursor:pointer;font-weight:600}
+.empty{padding:40px;text-align:center;color:var(--mu)}
+footer{max-width:1240px;margin:0 auto;padding:0 16px 40px;color:var(--mu);font-size:13px}
+.x{float:right}
+</style>
+</head>
+<body>
+<header><div class="bar">
+  <h1><i></i>Media Engine Showcase</h1><span class="sp"></span>
+  <input id="q" type="search" placeholder="Search videos" aria-label="Search videos">
+  <button id="theme" aria-label="Toggle theme">Theme</button>
+</div></header>
+<main>
+  <div class="chips" id="chips" role="group" aria-label="Filter by channel"></div>
+  <section id="cw" hidden><h2>Continue watching</h2><div class="grid" id="cwg"></div></section>
+  <section><h2 id="alltitle">All videos</h2><div class="grid" id="grid"></div><div class="empty" id="empty" hidden>No videos match.</div></section>
+</main>
+<footer id="foot"></footer>
+<dialog id="dlg"><div class="dg"><div><video id="vid" controls playsinline preload="metadata"></video>
+  <div class="row"><button data-r="0.9">0.9x</button><button data-r="1">1x</button><button data-r="1.25">1.25x</button><button data-r="1.5">1.5x</button><button id="next">Next &rarr;</button></div></div>
+  <div class="info"><button class="x" id="close" aria-label="Close">Close</button><h3 id="t"></h3><p id="m"></p><p id="d"></p><div class="row" id="tags"></div>
+  <details><summary>Transcript</summary><p id="tr" style="white-space:pre-wrap"></p></details>
+  <details><summary>How it was made</summary><p id="how"></p></details></div></div></dialog>
+<script>
+const $=s=>document.querySelector(s);let V=[],ch="all",cur=null;
+const store={get(k,d){try{return JSON.parse(localStorage.getItem(k))??d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+const fmt=s=>{s=Math.round(s);return Math.floor(s/60)+":"+String(s%60).padStart(2,"0")};
+const esc=s=>String(s??"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function card(v,showProg){const p=store.get("p:"+v.id,null);const pr=p&&v.duration?Math.min(100,p.t/v.duration*100):0;
+ return `<button class="card" data-id="${esc(v.id)}" style="--cc:${esc(v.color||'#0a8fb4')}"><div class="ph" style="background-image:url('${esc(v.poster)}')"><span class="play"></span><span class="badge">${esc(v.channel)}</span>${showProg&&pr?`<span class="bar2" style="width:${pr}%"></span>`:""}</div>
+ <div class="meta"><b>${esc(v.title)}</b><small>${fmt(v.duration)} · ${esc(v.date)}</small></div></button>`}
+function render(){const q=$("#q").value.toLowerCase();
+ const list=V.filter(v=>(ch==="all"||v.channel===ch)&&(!q||(v.title+" "+v.channel+" "+(v.transcript||"")).toLowerCase().includes(q)));
+ $("#grid").innerHTML=list.map(v=>card(v,true)).join("");$("#empty").hidden=list.length>0;
+ const cw=V.filter(v=>{const p=store.get("p:"+v.id,null);return p&&p.t>3&&p.t<v.duration-3});
+ $("#cw").hidden=!cw.length;$("#cwg").innerHTML=cw.map(v=>card(v,true)).join("")}
+function open(id){const v=V.find(x=>x.id===id);if(!v)return;cur=v;$("#t").textContent=v.title;
+ $("#m").textContent=`${v.channel} · ${fmt(v.duration)} · ${v.date}${v.qa?` · QA ${v.qa}/100`:""} · ${v.resolution||"1080x1920"}`;
+ $("#d").textContent=v.description||"";$("#tags").innerHTML=(v.tags||[]).map(t=>`<button class="chip" disabled>#${esc(t)}</button>`).join("");
+ $("#tr").textContent=v.transcript||"";$("#how").textContent=v.how||"";
+ const vid=$("#vid");vid.src=v.file;vid.poster=v.poster;const p=store.get("p:"+v.id,null);
+ vid.onloadedmetadata=()=>{if(p&&p.t>3&&p.t<vid.duration-3)vid.currentTime=p.t};
+ $("#dlg").showModal();vid.play().catch(()=>{});history.replaceState(null,"","#"+v.id)}
+$("#vid").addEventListener("timeupdate",e=>{if(cur)store.set("p:"+cur.id,{t:e.target.currentTime})});
+$("#vid").addEventListener("ended",()=>{if(cur){store.set("p:"+cur.id,{t:0});$("#next").click()}});
+$("#next").onclick=()=>{const i=V.findIndex(x=>x.id===cur.id);const n=V[(i+1)%V.length];if(n)open(n.id)};
+$("#close").onclick=()=>$("#dlg").close();$("#dlg").addEventListener("close",()=>{$("#vid").pause();history.replaceState(null,"","#");render()});
+document.querySelectorAll("[data-r]").forEach(b=>b.onclick=()=>{$("#vid").playbackRate=+b.dataset.r});
+document.addEventListener("click",e=>{const c=e.target.closest(".card");if(c)open(c.dataset.id)});
+document.addEventListener("keydown",e=>{if(!$("#dlg").open)return;const v=$("#vid");if(e.key==="ArrowRight"){v.currentTime+=5}else if(e.key==="ArrowLeft"){v.currentTime-=5}else if(e.key.toLowerCase()==="n"){$("#next").click()}});
+$("#q").oninput=render;
+$("#theme").onclick=()=>{const r=document.documentElement;const d=getComputedStyle(r).getPropertyValue("--bg").trim()==="#0b1220";r.dataset.theme=d?"light":"dark";store.set("theme",r.dataset.theme)};
+const th=store.get("theme",null);if(th)document.documentElement.dataset.theme=th;
+(async()=>{ if(!/^https?:/.test(location.protocol)){ const m=window.__VIDEOS__; if(m) return m; throw new Error("This page must be served over http(s) (GitHub Pages, or run: python -m http.server in the docs folder)."); } const r=await fetch(new URL("videos.json",document.baseURI).href); if(!r.ok) throw new Error("videos.json not found (HTTP "+r.status+")"); return r.json(); })().then(d=>{V=d.videos;document.title=d.title||document.title;
+ const chs=[...new Set(V.map(v=>v.channel))];
+ $("#chips").innerHTML=["all",...chs].map(c=>`<button class="chip" aria-pressed="${c===ch}" data-c="${esc(c)}">${c==="all"?"All channels":esc(c)}</button>`).join("");
+ $("#chips").onclick=e=>{const b=e.target.closest("[data-c]");if(!b)return;ch=b.dataset.c;document.querySelectorAll(".chip").forEach(x=>x.setAttribute("aria-pressed",x===b));render()};
+ $("#foot").innerHTML=`${V.length} videos · updated ${esc(d.updated)} · All presenters, voices, images and music are AI-generated or synthesized; no real person is depicted. ${esc(d.note||"")}`;
+ render();if(location.hash.length>1)open(decodeURIComponent(location.hash.slice(1)))}).catch(e=>{$("#empty").hidden=false;$("#empty").textContent="Could not load the video list: "+(e.message||e)});
+</script>
+</body>
+</html>

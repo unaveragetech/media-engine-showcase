@@ -1,0 +1,23 @@
+{
+ "title": "Media Engine Showcase",
+ "updated": "2026-11-15 00:54",
+ "note": "Source code is private.",
+ "videos": [
+  {
+   "id": "quick-bytes",
+   "title": "Media Engine: Your Local Video Studio",
+   "channel": "Quick Bytes",
+   "date": "2026-11-15",
+   "duration": 31.5,
+   "qa": 95.0,
+   "resolution": "1080x1920",
+   "file": "videos/quick-bytes.mp4",
+   "poster": "posters/quick-bytes.jpg",
+   "color": "#ffc75c",
+   "description": "Learn how Media Engine gives creators total local control over their entire video production process. AI-generated presenter and visuals.",
+   "tags": [],
+   "transcript": "Media Engine is a fully local video production framework that runs on a single Windows PC, needing no cloud AI service at runtime.\n\nA topic moves through a pipeline that includes discovery, scoring, a duplicate check, and research before any script is written.\n\nThe system builds vertical videos, using one permanent presenter alternating with supporting graphics, plus captions and background music.\n\nA research claim only counts as verified when its supporting quote appears word for word in a stored source.",
+   "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
+  }
+ ]
+}
