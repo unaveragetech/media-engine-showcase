@@ -1,22 +1,22 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 00:54",
+ "updated": "2026-11-15 02:08",
  "note": "Source code is private.",
  "videos": [
   {
    "id": "quick-bytes",
-   "title": "Media Engine: Your Local Video Studio",
+   "title": "Media Engine in Thirty Seconds",
    "channel": "Quick Bytes",
    "date": "2026-11-15",
-   "duration": 31.5,
-   "qa": 95.0,
+   "duration": 42.4,
+   "qa": 90.5,
    "resolution": "1080x1920",
    "file": "videos/quick-bytes.mp4",
    "poster": "posters/quick-bytes.jpg",
    "color": "#ffc75c",
-   "description": "Learn how Media Engine gives creators total local control over their entire video production process. AI-generated presenter and visuals.",
+   "description": "Discover the Media Engine: a fully local video production framework. Learn how running your entire studio on your own hardware guarantees quality and uptime. AI-generated presenter and visuals.",
    "tags": [],
-   "transcript": "Media Engine is a fully local video production framework that runs on a single Windows PC, needing no cloud AI service at runtime.\n\nA topic moves through a pipeline that includes discovery, scoring, a duplicate check, and research before any script is written.\n\nThe system builds vertical videos, using one permanent presenter alternating with supporting graphics, plus captions and background music.\n\nA research claim only counts as verified when its supporting quote appears word for word in a stored source.",
+   "transcript": "Media Engine is a fully local video production framework that runs on a single Windows PC, with no cloud AI service needed at runtime.\n\nA topic moves through a pipeline of discovery, scoring, and a duplicate check before scripting.\n\nAn independent quality stage must score each video at least 85 out of 100, and a hard failure such as an unsupported claim, a missing license or a missing AI disclosure blocks it regardless of score.\n\nAll language-model work goes through Ollama on the same computer, and the same graphics card also helps render the videos.",
    "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
   }
  ]
