@@ -1,8 +1,24 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 02:08",
+ "updated": "2026-11-15 04:13",
  "note": "Source code is private.",
  "videos": [
+  {
+   "id": "media-engine",
+   "title": "Media Engine: Your Local Video Studio",
+   "channel": "Media Engine",
+   "date": "2026-11-15",
+   "duration": 80.4,
+   "qa": 92.8,
+   "resolution": "1080x1920",
+   "file": "videos/media-engine.mp4",
+   "poster": "posters/media-engine.jpg",
+   "color": "#00d3e6",
+   "description": "Discover Media Engine: a fully local video production framework for creators and developers. Learn how to own your entire content pipeline without relying on cloud subscriptions. AI-generated presenter and visuals.",
+   "tags": [],
+   "transcript": "Media Engine is a fully local video production framework that runs on a single Windows PC, requiring no cloud AI service at runtime.\n\nA topic moves through a pipeline that includes discovery, scoring, a duplicate check, and research before scripting begins.\n\nSeven editorial workers write each script in turn, from research analyst to final editor, and every worker saves a new version instead of overwriting the last one.\n\nThe output requires passing an independent quality stage, which must score each video at least 85 out of 100. Furthermore, hard failures, such as an unsupported claim, a missing license, or a missing AI disclosure, will block publication regardless of the score. Publishing is restricted to official platform APIs, though TikTok and Instagram may require a manual handoff package if automated posting is not approved.\n\nAll language-model work goes through Ollama on the same computer, and the same graphics card also helps render the videos.\n\nA research claim only counts as verified when its supporting quote appears word for word in a stored source.",
+   "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
+  },
   {
    "id": "quick-bytes",
    "title": "Media Engine in Thirty Seconds",
