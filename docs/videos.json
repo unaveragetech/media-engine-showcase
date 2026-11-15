@@ -1,8 +1,24 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 05:44",
+ "updated": "2026-11-15 06:41",
  "note": "Source code is private.",
  "videos": [
+  {
+   "id": "code-and-coffee",
+   "title": "Under the Hood: Jobs, Checkpoints, and Safe Publishing",
+   "channel": "Code and Coffee",
+   "date": "2026-11-15",
+   "duration": 62.8,
+   "qa": 91.3,
+   "resolution": "1080x1920",
+   "file": "videos/code-and-coffee.mp4",
+   "poster": "posters/code-and-coffee.jpg",
+   "color": "#c44d34",
+   "description": "Dive deep into reliable automation patterns using checkpoints and safe publishing methods. We cover what it takes to build robust pipelines. AI-generated presenter and visuals.",
+   "tags": [],
+   "transcript": "A research claim only counts as verified when its supporting quote appears word for word in a stored source.\n\nJobs are stored in a database with checkpoints, allowing an interrupted render to resume without repeating the narration.\n\nDuplicate uploads are prevented by a unique key for each channel, platform, and render, and the engine checks what the platform already has before any retry.\n\nPublishing uses official platform APIs only, so YouTube uploads can be automated, while TikTok and Instagram fall back to a manual handoff package when automated posting is not approved. Emergency controls can pause publishing or stop every worker immediately.\n\nSeven editorial workers write each script in turn, from research analyst to final editor, and every worker saves a new version instead of overwriting the last one.",
+   "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
+  },
   {
    "id": "deep-dive",
    "title": "How Media Engine Keeps Every Video Honest",
