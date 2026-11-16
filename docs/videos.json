@@ -1,8 +1,29 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 16:44",
+ "updated": "2026-11-15 22:37",
  "note": "Source code is private.",
  "videos": [
+  {
+   "id": "daily-signal",
+   "title": "Self-Hosting Map Tiles: The Cost Breakthrough",
+   "channel": "Daily Signal",
+   "date": "2026-11-15",
+   "duration": 88.0,
+   "qa": 93.2,
+   "resolution": "1080x1920",
+   "file": "videos/daily-signal.mp4",
+   "poster": "posters/daily-signal.jpg",
+   "color": "#faff00",
+   "description": "What if your map visualization never cost you money, no matter how popular it got? Commercial map services can become prohibitively expensive if your project goes viral [C3].",
+   "tags": [
+    "Geospatial",
+    "WebDev",
+    "CostSaving",
+    "PMTiles"
+   ],
+   "transcript": "PMTiles, a tile format within the Protomaps ecosystem, ships in a single file and is accessible via Range requests, making it highly portable and easy to deploy.\n\nPMTiles is a tile format that works via HTTP Range requests and can be deployed as a single file to a storage bucket.\n\nIn practical terms, storing the 139GB world map with replication to most continents (5x) will run you about $5/month in storage fees. At $0.05/1k map loads that could be 100x cheaper than Mapbox.\n\nFor example, you can extract data for only a bounding box or specific zoom levels, to get a significantly smaller file. With the tiles deployed, the only thing left to do is to embed them in your website via MapLibre GL, for example.\n\nThey support HTTP Range requests, don\u2019t collect personal data by default, 2 are headquartered in the EU, and offer low-cost access to a global network of CDN and edge storage servers.",
+   "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
+  },
   {
    "id": "nullpoint",
    "title": "Log Entry: Day 1",
