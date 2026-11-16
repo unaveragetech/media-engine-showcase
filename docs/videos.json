@@ -1,8 +1,29 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 23:20",
+ "updated": "2026-11-15 23:37",
  "note": "Source code is private.",
  "videos": [
+  {
+   "id": "daily-signal-2",
+   "title": "Old Bitly Links Being Hijacked: What It Means",
+   "channel": "Daily Signal",
+   "date": "2026-11-15",
+   "duration": 87.7,
+   "qa": 92.5,
+   "resolution": "1080x1920",
+   "file": "videos/daily-signal-2.mp4",
+   "poster": "posters/daily-signal-2.jpg",
+   "color": "#faff00",
+   "description": "Old Bitly links are being hijacked by bad actors. Learn how to spot compromised digital breadcrumbs using a simple trick. Sources cited throughout. AI-generated presenter and visuals.",
+   "tags": [
+    "CyberSecurity",
+    "ScamAlert",
+    "DigitalSafety",
+    "BitlyHacks"
+   ],
+   "transcript": "A Bitly short link in a tweet the chain posted on 24 July 2011 was registered again by someone else on 15 November 2026 and pointed at Wikipedia\u2019s list of Nazi concentration camps. Eighteen minutes earlier a Bitly link in a McDonald\u2019s tweet from 7 June 2011 was registered the same way and pointed at Wikipedia\u2019s article on the September 11 attacks.\n\nUpdate, 15 November, 22:30 UTC: Bitly has confirmed the problem. Bitly said it has suspended the accounts involved and is disabling the affected links. The part of a Bitly link after the slash is called the back-half.\n\nAdd a plus sign to the end of the address and it shows where the link points and when it was created. For bit[.]ly/19BFiM that page gives the destination as Wikipedia\u2019s \u201cList of Nazi concentration camps\u201d and the creation time as 15 November 2026, 05:32 UTC.\n\nAmong the Trump links that are still original, 32 of 40 were created on the day of the tweet or the day before.",
+   "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
+  },
   {
    "id": "helpful-exe",
    "title": "I Alphabetised Your Fridge",
