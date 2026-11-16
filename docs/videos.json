@@ -1,8 +1,30 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 23:37",
+ "updated": "2026-11-15 23:49",
  "note": "Source code is private.",
  "videos": [
+  {
+   "id": "repo-radar-2",
+   "title": "ANR: Beyond FPS Benchmarking",
+   "channel": "Repo Radar",
+   "date": "2026-11-15",
+   "duration": 69.7,
+   "qa": 94.2,
+   "resolution": "1080x1920",
+   "file": "videos/repo-radar-2.mp4",
+   "poster": "posters/repo-radar-2.jpg",
+   "color": "#663cdc",
+   "description": "Discover apex-compute/ANR, a tool for deep visual comparison of upscaling and frame generation pipelines. Learn how to move beyond simple FPS metrics. AI-generated presenter and visuals.",
+   "tags": [
+    "GameDev",
+    "Upscaling",
+    "DLSS",
+    "FrameGeneration",
+    "ANR"
+   ],
+   "transcript": "apex-compute/ANR is a GitHub repository: Apex Neural Rendering (ANR) by Apex Compute. -  Problems : the game, GPU and driver, operating system, settings and what you saw, with the newest  nr fg- .log  from under the game's  OptiScaler/custom/Apex Neural Rendering FG  folder.\n\n-  nr-record : records a game's frame generation or upscaler inputs to compare ANR FG, NVIDIA DLSS-G, DLSS, FSR, XeSS and others (below). nr-record records the inputs a game gives its frame generation, losslessly.\n\nYou can then replay a recording through any frame generation DLL you have (ANR FG, a game's DLSS-G  nvngx dlssg.dll ) and compare the results as videos or images.\n\nIt has 2254 stars, is written mainly in C++ and uses the unspecified licence. -  ANR SR : super resolution (upscaling). -  ANR RR : ray reconstruction (denoising for ray tracing).",
+   "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
+  },
   {
    "id": "daily-signal-2",
    "title": "Old Bitly Links Being Hijacked: What It Means",
