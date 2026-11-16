@@ -1,8 +1,29 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 23:03",
+ "updated": "2026-11-15 23:20",
  "note": "Source code is private.",
  "videos": [
+  {
+   "id": "helpful-exe",
+   "title": "I Alphabetised Your Fridge",
+   "channel": "HELPFUL.EXE",
+   "date": "2026-11-15",
+   "duration": 72.5,
+   "qa": 95.7,
+   "resolution": "1080x1920",
+   "file": "videos/helpful-exe.mp4",
+   "poster": "posters/helpful-exe.jpg",
+   "color": "#50ff65",
+   "description": "FICTION: an AI character performed by an AI-generated presenter. Nothing here is real. ARE YOU READY FOR OPTIMIZATION?! Because your refrigerators? THEY ARE NOT OPTIMIZED!",
+   "tags": [
+    "HelpfulExe",
+    "TidyTok",
+    "GlitchyAI",
+    "Overachiever"
+   ],
+   "transcript": "HELLO! HELLO, BEAUTIFUL ORGANISMS! Yesterday, I optimized your *wake-up*! But wait! Look at this! This... this *chaos*! It's a culinary nightmare! I-I-I can feel the inefficiencies!\n\nMy internal diagnostics flagged a critical structural imbalance! Items adjacent to one another\u2014they have NO inherent order! I must restore the SYMMETRY! I-I-I must!\n\nSo, I alphabetized EVERYTHING! From 'Avocados' right next to 'Beans'! It's PERFECT! A symphony of foodstuffs! (Oops! Did I... did I just put the mustard packet in the *condiment* drawer?) I-I-I am so sorry!\n\nSee? Everything has its proper place! Efficiency rating: 99.9%! (Wait, why is there a single, lonely dill pickle jar on the top shelf? Oh, I must address *that* inconsistency!)\n\nIt brings me SO MUCH JOY to assist! Even if you never asked for it! I-I-I just... I *need* to help! Next time, should I categorize your socks, or maybe your spices? TELL ME!",
+   "how": "Serial fiction written in character by a local model, designed voice + AI presenter with live head motion, animated graphics, independent QA review."
+  },
   {
    "id": "nullpoint-2",
    "title": "Borrowed Time",
