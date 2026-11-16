@@ -1,8 +1,31 @@
 {
  "title": "Media Engine Showcase",
- "updated": "2026-11-15 22:37",
+ "updated": "2026-11-15 22:47",
  "note": "Source code is private.",
  "videos": [
+  {
+   "id": "repo-radar",
+   "title": "DeepSeek Chat Demo: Local AI Prototyping",
+   "channel": "Repo Radar",
+   "date": "2026-11-15",
+   "duration": 63.4,
+   "qa": 92.7,
+   "resolution": "1080x1920",
+   "file": "videos/repo-radar.mp4",
+   "poster": "posters/repo-radar.jpg",
+   "color": "#663cdc",
+   "description": "See how to prototype advanced AI UIs locally with the deepseek-ai/chat-demo. Learn about static deployment, local data handling using IndexedDB, and rich features like citation reading and math rendering. AI-generated presenter and visuals.",
+   "tags": [
+    "AIPrototyping",
+    "DeepSeek",
+    "LocalAI",
+    "WebDev",
+    "NoBackend",
+    "DeepSeekChatDemo"
+   ],
+   "transcript": "A static chat demo powered by the DeepSeek API. No application backend is required: the browser connects directly to the configured API service.\n\n- Streaming replies, deep thinking, smart search, link reading, and source citations; stop generation or continue eligible replies. - Upload, paste, or drag and drop attachments; use voice input and read replies aloud.\n\ndeepseek-ai/chat-demo is a GitHub repository: Chat Demo. It has 3274 stars, is written mainly in TypeScript and uses the MIT licence. You can try the app online or download the archive from Releases, extract it, and double-click  index.html  to use it locally without installation or a build.\n\n- Markdown, syntax highlighting, KaTeX math, and Mermaid diagrams. - Simplified Chinese and English, light and dark themes, mobile layouts, location settings, and chat history import and export.",
+   "how": "Topic -> research from a fact sheet -> seven-worker script -> designed voice + AI presenter -> animated graphics -> independent QA review."
+  },
   {
    "id": "daily-signal",
    "title": "Self-Hosting Map Tiles: The Cost Breakthrough",
